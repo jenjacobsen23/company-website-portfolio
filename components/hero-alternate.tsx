@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, CheckCircle } from "lucide-react"
+import { Button } from '@/components/ui/button';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 export default function HeroAlternate() {
   return (
@@ -23,13 +23,17 @@ export default function HeroAlternate() {
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-                We partner with ambitious companies to accelerate growth through strategic technology solutions, cloud
-                innovation, and data-driven insights that deliver measurable business impact.
+                We partner with ambitious companies to accelerate growth through strategic
+                technology solutions, cloud innovation, and data-driven insights that deliver
+                measurable business impact.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full">
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-full"
+              >
                 Start Your Transformation
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
@@ -56,12 +60,6 @@ export default function HeroAlternate() {
                 <span className="text-gray-700 font-medium">24/7 Support</span>
               </div>
             </div>
-
-            <div className="mt-6 p-3 bg-orange-50 border border-orange-200 rounded-lg">
-              <p className="text-orange-800 text-sm font-medium text-center">
-                ⚠️ This is a portfolio demonstration website - Not a real business
-              </p>
-            </div>
           </div>
 
           {/* Right Content - Takes 5 columns */}
@@ -76,7 +74,9 @@ export default function HeroAlternate() {
 
                   <div className="space-y-4">
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Company Size</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Company Size
+                      </label>
                       <select className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option>Select company size</option>
                         <option>1-50 employees</option>
@@ -87,7 +87,9 @@ export default function HeroAlternate() {
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">Primary Challenge</label>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Primary Challenge
+                      </label>
                       <select className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         <option>Select main challenge</option>
                         <option>Legacy system modernization</option>
@@ -112,5 +114,5 @@ export default function HeroAlternate() {
         </div>
       </div>
     </section>
-  )
+  );
 }

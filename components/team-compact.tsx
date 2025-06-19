@@ -1,33 +1,33 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Linkedin, ArrowRight } from "lucide-react"
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Linkedin, ArrowRight } from 'lucide-react';
 
 const team = [
   {
-    name: "David Thompson",
-    title: "CEO & Founder",
-    image: "/placeholder.svg?height=120&width=120",
-    linkedin: "#",
+    name: 'David Thompson',
+    title: 'CEO & Founder',
+    image: '/placeholder.svg?height=120&width=120',
+    linkedin: '#',
   },
   {
-    name: "Lisa Chen",
-    title: "CTO",
-    image: "/placeholder.svg?height=120&width=120",
-    linkedin: "#",
+    name: 'Lisa Chen',
+    title: 'CTO',
+    image: '/placeholder.svg?height=120&width=120',
+    linkedin: '#',
   },
   {
-    name: "Marcus Rodriguez",
-    title: "VP of Strategy",
-    image: "/placeholder.svg?height=120&width=120",
-    linkedin: "#",
+    name: 'Marcus Rodriguez',
+    title: 'VP of Strategy',
+    image: '/placeholder.svg?height=120&width=120',
+    linkedin: '#',
   },
   {
-    name: "Sarah Kim",
-    title: "Head of Data Science",
-    image: "/placeholder.svg?height=120&width=120",
-    linkedin: "#",
+    name: 'Sarah Kim',
+    title: 'Head of Data Science',
+    image: '/placeholder.svg?height=120&width=120',
+    linkedin: '#',
   },
-]
+];
 
 export default function TeamCompact() {
   return (
@@ -37,8 +37,9 @@ export default function TeamCompact() {
           <div className="space-y-6">
             <h2 className="text-4xl font-bold text-white">Meet the Experts Behind Your Success</h2>
             <p className="text-xl text-blue-100 leading-relaxed">
-              Our leadership team brings decades of combined experience from top-tier technology companies and
-              consulting firms, ensuring your digital transformation is in expert hands.
+              Our leadership team brings decades of combined experience from top-tier technology
+              companies and consulting firms, ensuring your digital transformation is in expert
+              hands.
             </p>
             <div className="flex items-center space-x-6">
               <div className="text-center">
@@ -54,7 +55,10 @@ export default function TeamCompact() {
                 <div className="text-blue-200 text-sm">Success Rate</div>
               </div>
             </div>
-            <Button variant="outline" className="bg-white text-blue-600 hover:bg-gray-50 rounded-full px-8">
+            <Button
+              variant="outline"
+              className="bg-white text-blue-600 hover:bg-gray-50 rounded-full px-8"
+            >
               View Full Team
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -64,11 +68,11 @@ export default function TeamCompact() {
             {team.map((member, index) => (
               <Card
                 key={index}
-                className="bg-white/10 backdrop-blur border-white/20 hover:bg-white/20 transition-all duration-300"
+                className="bg-white/10 backdrop-blur border-white/20 hover:bg-white/20 transition-all duration-300 cursor-pointer"
               >
                 <CardContent className="p-6 text-center">
                   <img
-                    src={member.image || "/placeholder.svg"}
+                    src={member.image || '/placeholder.svg'}
                     alt={member.name}
                     className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
                   />
@@ -87,5 +91,5 @@ export default function TeamCompact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

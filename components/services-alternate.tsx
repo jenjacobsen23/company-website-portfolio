@@ -1,30 +1,33 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Cloud, BarChart3, Cog, ArrowRight } from "lucide-react"
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Cloud, BarChart3, Cog, ArrowRight } from 'lucide-react';
 
 const services = [
   {
     icon: Cloud,
-    title: "Cloud Migration & Strategy",
-    description: "Seamlessly transition to cloud infrastructure with our proven methodologies and strategic planning.",
-    features: ["AWS/Azure/GCP", "Zero Downtime", "Cost Optimization"],
-    color: "bg-blue-50 text-blue-600",
+    title: 'Cloud Migration & Strategy',
+    description:
+      'Seamlessly transition to cloud infrastructure with our proven methodologies and strategic planning.',
+    features: ['AWS/Azure/GCP', 'Zero Downtime', 'Cost Optimization'],
+    color: 'bg-blue-50 text-blue-600',
   },
   {
     icon: BarChart3,
-    title: "Data Analytics & BI",
-    description: "Transform raw data into actionable insights with advanced analytics and business intelligence.",
-    features: ["Real-time Dashboards", "Predictive Analytics", "Custom Reports"],
-    color: "bg-orange-50 text-orange-600",
+    title: 'Data Analytics & BI',
+    description:
+      'Transform raw data into actionable insights with advanced analytics and business intelligence.',
+    features: ['Real-time Dashboards', 'Predictive Analytics', 'Custom Reports'],
+    color: 'bg-orange-50 text-orange-600',
   },
   {
     icon: Cog,
-    title: "Process Automation",
-    description: "Streamline operations and reduce costs through intelligent automation and workflow optimization.",
-    features: ["RPA Solutions", "Workflow Design", "Integration APIs"],
-    color: "bg-green-50 text-green-600",
+    title: 'Process Automation',
+    description:
+      'Streamline operations and reduce costs through intelligent automation and workflow optimization.',
+    features: ['RPA Solutions', 'Workflow Design', 'Integration APIs'],
+    color: 'bg-green-50 text-green-600',
   },
-]
+];
 
 export default function ServicesAlternate() {
   return (
@@ -39,8 +42,9 @@ export default function ServicesAlternate() {
                 <span className="block text-blue-600">Drive Results</span>
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Our comprehensive digital transformation services are designed to accelerate your business growth and
-                competitive advantage in today's rapidly evolving digital landscape.
+                Our comprehensive digital transformation services are designed to accelerate your
+                business growth and competitive advantage in today's rapidly evolving digital
+                landscape.
               </p>
             </div>
 
@@ -63,7 +67,9 @@ export default function ServicesAlternate() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Custom Implementation</h3>
-                  <p className="text-gray-600">Tailored solutions designed specifically for your business needs.</p>
+                  <p className="text-gray-600">
+                    Tailored solutions designed specifically for your business needs.
+                  </p>
                 </div>
               </div>
 
@@ -73,7 +79,9 @@ export default function ServicesAlternate() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Ongoing Support</h3>
-                  <p className="text-gray-600">Continuous optimization and support to ensure long-term success.</p>
+                  <p className="text-gray-600">
+                    Continuous optimization and support to ensure long-term success.
+                  </p>
                 </div>
               </div>
             </div>
@@ -87,7 +95,10 @@ export default function ServicesAlternate() {
           {/* Right Content - Service Cards */}
           <div className="space-y-6">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-0 bg-white">
+              <Card
+                key={index}
+                className="group transition-all hover:shadow-lg hover:border-blue-600  duration-300 bg-white cursor-pointer"
+              >
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <div
@@ -100,7 +111,10 @@ export default function ServicesAlternate() {
                       <p className="text-gray-600 mb-4">{service.description}</p>
                       <div className="flex flex-wrap gap-2">
                         {service.features.map((feature, idx) => (
-                          <span key={idx} className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">
+                          <span
+                            key={idx}
+                            className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
+                          >
                             {feature}
                           </span>
                         ))}
@@ -114,5 +128,5 @@ export default function ServicesAlternate() {
         </div>
       </div>
     </section>
-  )
+  );
 }

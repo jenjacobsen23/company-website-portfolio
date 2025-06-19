@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Linkedin, Twitter, Facebook, Mail } from "lucide-react"
+import Link from 'next/link';
+import { Linkedin, Twitter, Facebook, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -15,7 +15,8 @@ export default function Footer() {
               <span className="font-bold text-xl">Nexus Digital</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Transforming businesses through strategic digital innovation and cutting-edge technology solutions.
+              Transforming businesses through strategic digital innovation and cutting-edge
+              technology solutions.
             </p>
             <div className="flex space-x-4">
               <a
@@ -121,7 +122,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@nexusdigital.com" className="hover:text-white transition-colors">
+                <a
+                  href="mailto:hello@nexusdigital.com"
+                  className="hover:text-white transition-colors"
+                >
                   hello@nexusdigital.com
                 </a>
               </li>
@@ -129,14 +133,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4">
-            <p className="text-gray-400 text-sm">© 2024 Nexus Digital Solutions. All rights reserved.</p>
-            <div className="bg-orange-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-              Portfolio Example Only
-            </div>
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col justify-between items-center">
+          <div className="text-center text-muted-foreground">
+            <p>© 2024 Nexus Digital Solutions. All rights reserved.</p>
+            <p className="mt-2 text-sm">
+              This is a fictional company created for portfolio demonstration purposes only.
+            </p>
           </div>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="flex space-x-6 mt-6">
             <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
               Privacy Policy
             </Link>
@@ -150,5 +154,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
